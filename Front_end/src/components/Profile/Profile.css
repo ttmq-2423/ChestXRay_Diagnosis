@@ -1,0 +1,88 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.container h1 {
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Thêm padding cho phần profile-details */
+    background-color: #f9f9f9; /* Màu nền của khung bọc */
+    border: 1px solid #ccc; /* Viền khung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho khung */
+    border-radius: 8px; /* Bo tròn góc khung */
+}
+
+.profile-details img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details input[type="file"] {
+    margin-top: 10px;
+}
+
+.confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.confirm-dialog p {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.confirm-dialog button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #22c1c3, #1a9ca7);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.confirm-dialog button:nth-child(2) {
+    background: #6c757d;
+}
+
+.confirm-dialog button:hover {
+    background: linear-gradient(135deg, #1a9ca7, #22c1c3);
+}
+
+.Toastify__toast-container {
+    z-index: 1100;
+}
+
+.Toastify__toast--success {
+    background-color: null;
+}
+
+.Toastify__toast--error {
+    background-color: #d9534f;
+}

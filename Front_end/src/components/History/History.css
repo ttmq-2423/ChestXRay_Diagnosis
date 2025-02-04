@@ -1,0 +1,38 @@
+.history-container {
+    margin-top: 20px;
+}
+
+.image-card {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-card-media {
+    height: 200px;
+    object-fit: cover;
+}
+
+.image-card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.prediction-label {
+    font-weight: bold;
+}
+
+.prediction-result {
+    display: block;
+    margin-top: 4px;
+}
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}

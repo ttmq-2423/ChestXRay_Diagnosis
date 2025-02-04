@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.aa{
+  display:flex;
+}
+
+.image-display-container {
+  border: 3px solid #000000;  
+  padding: 10px; 
+  border-radius: 10px;  
+  margin-top: 20px;  
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.image-card-media {
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.prediction-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.prediction-result {
+  font-style: italic;
+  color: #666;
+}
+
+.title {
+  font-size: 50px; 
+  font-weight: 300; 
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Kanit", sans-serif; 
+   
+  color: rgb(0, 0, 0);
+  text-shadow: 
+    -0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,   
+    -0.5px 0.5px 0 #000,   
+    1px 1px 0 #000;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}

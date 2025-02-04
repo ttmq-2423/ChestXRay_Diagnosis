@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    min-height: 90vh;
+
+
+  }
+  .grid-item-1 {
+    display: flex; 
+    width: 300px;
+    height: 100vh;
+ 
+  }
+  .grid-item-2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-family: "Josefin Sans", sans-serif;
+
+   
+  }
+  .grid-item-2 button {
+    background: transparent; /* Nền trong suốt */
+    color: rgb(0, 0, 0); /* Màu chữ trắng */
+    font-size: 1em; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ chuột thay đổi khi di chuyển qua nút */
+    font-family: "IBM Plex Serif", serif; 
+
+  }
+  .btn-register {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #000000;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1.5px solid rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+ 
+}
+.btn-register:hover {
+ 
+  color: rgb(0, 0, 0);
+  background: linear-gradient(135deg, rgba(34, 193, 195, 1) 0%, rgba(34, 193, 195, 1) 100%);
+}
+
+.btnn-login{
+  text-decoration: underline;
+ 
+  border: 0px solid rgb(0, 0, 0);
+
+}
+.btnn-login:hover {
+ 
+  color: rgb(34, 193, 195, 1);
+  background: transparent; 
+  font-weight: 500;
+}
+ 
+ 
+
+.register-container {
+    max-width: 500px;
+    min-width: 500px;
+    background-color: #f7f7f7;  
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.register-title {
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Ultra", serif;
+  color:rgba(34, 193, 195, 1) ;
+  text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,  
+    -2px 2px 0 #000,   
+    2px 2px 0 #000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-size: 17.5px;
+  font-weight: 550;
+  padding-right: 15px;
+}
+
+.register-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 350;
+  background-color: transparent;
+}
+
+.register-input::placeholder {
+  color: #b4b2b2;
+}
+
+.register-password {
+    position: relative;
+}
+
+.show-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+    cursor: pointer;
+}
+
+
+
+
