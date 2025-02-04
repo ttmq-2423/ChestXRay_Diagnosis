@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  nginx:
+    build:
+      context: ./Reverse_proxy
+      dockerfile: Dockerfile
+    ports:
+      - "80:8080"
+    depends_on:
+      - api_database
+      - image_classification
+    restart: always
+
+  api_database:
+    build:
+      context: ./api_database/myProject
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - DEBUG=1
+    volumes:
+      - ./api_database/myProject:/app
+    restart: always
+
+  image_classification:
+    build:
+      context: ./image_classification/myProject
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+    volumes:
+      - ./image_classification/myProject:/app
+    restart: always
