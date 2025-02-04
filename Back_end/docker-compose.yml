@@ -34,4 +34,3 @@ services:
       - DEBUG=1
     volumes:
       - ./image_classification:/app
-    restart: always
