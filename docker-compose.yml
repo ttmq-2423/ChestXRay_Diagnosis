@@ -3,34 +3,43 @@ version: "3.8"
 services:
   nginx:
     build:
-      context: ./Reverse_proxy
+      context: ./Back_end/Reverse_proxy
       dockerfile: Dockerfile
     ports:
       - "80:8080"
     depends_on:
       - api_database
       - image_classification
-    restart: always
 
   api_database:
     build:
-      context: ./api_database
+      context: ./Back_end/api_database
       dockerfile: Dockerfile
     ports:
       - "8001:8001"
     environment:
       - DEBUG=1
     volumes:
-      - ./api_database:/app
-    restart: always
+      - ./Back_end/api_database:/app
 
   image_classification:
     build:
-      context: ./image_classification
+      context: ./Back_end/image_classification
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
     environment:
       - DEBUG=1
     volumes:
-      - ./image_classification:/app
+      - ./Back_end/image_classification:/app
+  frontend:
+    build:
+      context: ./Front_end
+      dockerfile: Dockerfile  
+    ports:
+      - "3000:3000" 
+    volumes:
+      - ./Front_end:/usr/src/Front_end 
+    depends_on:
+      - api_database
+      - image_classification 
