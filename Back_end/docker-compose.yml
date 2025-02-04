@@ -14,24 +14,24 @@ services:
 
   api_database:
     build:
-      context: ./api_database/myProject
+      context: ./api_database
       dockerfile: Dockerfile
     ports:
       - "8001:8001"
     environment:
       - DEBUG=1
     volumes:
-      - ./api_database/myProject:/app
+      - ./api_database:/app
     restart: always
 
   image_classification:
     build:
-      context: ./image_classification/myProject
+      context: ./image_classification
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
     environment:
       - DEBUG=1
     volumes:
-      - ./image_classification/myProject:/app
+      - ./image_classification:/app
     restart: always
